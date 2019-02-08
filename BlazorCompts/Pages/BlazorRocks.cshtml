@@ -1,0 +1,17 @@
+@page "/BlazorRocks"
+@inherits BlazorRocksBase
+@*
+    The inherit directive provides the properties and methods
+    of the BlazorRocksBase class to this component.
+
+    
+*@
+<h1>@BlazorRocksText</h1>
+
+
+<input type="checkbox" checked="@IsCompleted" />
+
+@functions {
+    [Parameter]
+    private bool IsCompleted { get; set; }
+}
